@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Guess Me</title>
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <link href="/static/style.css" rel="stylesheet" />
+    <script src="/static/source.js"></script>
+
+    <div class="container pt-3">
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <h1>GUESS THE MONSTER!</h1>
+                <p>Click on the alphabets to guess the MONSTER!</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center" id="alphabets">
+                <button type="button" id="a" class="btn-danger btn-lg btn-outline-dark btn clickable">a</button>
+                <button type="button" id="b" class="btn-danger btn-lg btn-outline-dark btn clickable">b</button>
+                <button type="button" id="c" class="btn-danger btn-lg btn-outline-dark btn clickable">c</button>
+                <button type="button" id="d" class="btn-danger btn-lg btn-outline-dark btn clickable">d</button>
+                <button type="button" id="e" class="btn-danger btn-lg btn-outline-dark btn clickable">e</button>
+                <button type="button" id="f" class="btn-danger btn-lg btn-outline-dark btn clickable">f</button>
+                <button type="button" id="g" class="btn-danger btn-lg btn-outline-dark btn clickable">g</button>
+                <button type="button" id="h" class="btn-danger btn-lg btn-outline-dark btn clickable">h</button>
+                <button type="button" id="i" class="btn-danger btn-lg btn-outline-dark btn clickable">i</button>
+                <button type="button" id="j" class="btn-danger btn-lg btn-outline-dark btn clickable">j</button>
+                <button type="button" id="k" class="btn-danger btn-lg btn-outline-dark btn clickable">k</button>
+                <button type="button" id="l" class="btn-danger btn-lg btn-outline-dark btn clickable">l</button>
+                <button type="button" id="m" class="btn-danger btn-lg btn-outline-dark btn clickable">m</button>
+                <button type="button" id="n" class="btn-danger btn-lg btn-outline-dark btn clickable">n</button>
+                <button type="button" id="o" class="btn-danger btn-lg btn-outline-dark btn clickable">o</button>
+                <button type="button" id="p" class="btn-danger btn-lg btn-outline-dark btn clickable">p</button>
+                <button type="button" id="q" class="btn-danger btn-lg btn-outline-dark btn clickable">q</button>
+                <button type="button" id="r" class="btn-danger btn-lg btn-outline-dark btn clickable">r</button>
+                <button type="button" id="s" class="btn-danger btn-lg btn-outline-dark btn clickable">s</button>
+                <button type="button" id="t" class="btn-danger btn-lg btn-outline-dark btn clickable">t</button>
+                <button type="button" id="u" class="btn-danger btn-lg btn-outline-dark btn clickable">u</button>
+                <button type="button" id="v" class="btn-danger btn-lg btn-outline-dark btn clickable">v</button>
+                <button type="button" id="w" class="btn-danger btn-lg btn-outline-dark btn clickable">w</button>
+                <button type="button" id="x" class="btn-danger btn-lg btn-outline-dark btn clickable">x</button>
+                <button type="button" id="y" class="btn-danger btn-lg btn-outline-dark btn clickable">y</button>
+                <button type="button" id="z" class="btn-danger btn-lg btn-outline-dark btn clickable">z</button>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <span>Remaining Life:</span>
+                <span id="life">5</span>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <span>Hint: Category is</span>
+                <span id="hint"></span>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <p id="blanks"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-sm-4 text-center">
+            <p id="result"></p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
